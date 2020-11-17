@@ -1,1 +1,4 @@
 https://codepen.io/tutsplus/pen/bGVPVrY
+
+logo animation
+https://www.geeksforgeeks.org/html-css-tabindex-attribute-navigation-bars/
