@@ -15,15 +15,20 @@ window.onscroll = navbarScroll;
 const burger = document.querySelector('.burger');
 const menu = document.querySelector('.nav__menu');
 burger.addEventListener('click', () => {
+  let menuClasses = [
+    'nav__menu_active',
+    'animate__animated',
+    'animate__fadeIn',
+  ];
   burger.classList.toggle('burger_active');
-  menu.classList.toggle('is__active');
+  menu.classList.toggle(menuClasses);
 });
 
 // Removing active classes for burger and menu if window is resized
 window.addEventListener('resize', () => {
   if (window.innerWidth > width) {
     burger.classList.remove('burger_active');
-    menu.classList.remove('is__active');
+    menu.classList.remove('nav__menu_active');
   }
 });
 
@@ -43,12 +48,9 @@ window.addEventListener('click', (e) => {
 });
 
 // Search in navbar
-const searchOpen = document.querySelector('#toggle-search');
-const searchForm = document.querySelector('#search-form');
-const searchClose = document.querySelector('.form__btn_cancel');
+const searchOpen = document.querySelector('.nav__search');
 searchOpen.addEventListener('click', () => {
-  searchForm.classList.add('open');
-  searchOpen.classList.toggle('open');
+  searchOpen.classList.toggle('nav__search_active');
   return false;
 });
 
