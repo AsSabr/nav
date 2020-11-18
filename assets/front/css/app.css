@@ -481,6 +481,10 @@ input {
   line-height: normal;
 }
 
+input:focus {
+  outline: 0;
+}
+
 a:hover,
 button:hover {
   -webkit-transition: 0.3s all ease-in-out;
@@ -613,8 +617,7 @@ button {
   width: 100%;
   height: 100vh;
   position: relative;
-  -webkit-animation: fadeOutRight 0.7s;
-          animation: fadeOutRight 0.7s;
+  z-index: 100;
 }
 
 .nav__menu.nav__menu_active {
@@ -622,7 +625,7 @@ button {
   display: -ms-flexbox;
   display: flex;
   position: fixed;
-  top: 53px;
+  top: 52px;
   left: 0;
   right: 0;
   background-color: var(--nav-color);
@@ -713,6 +716,28 @@ button {
 
 .nav__search__form {
   display: none;
+  width: 100%;
+  padding: 10px;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: var(--body-bg);
+  -webkit-box-shadow: 0 6px 10px rgba(37, 50, 61, 0.15);
+          box-shadow: 0 6px 10px rgba(37, 50, 61, 0.15);
+}
+
+.nav__search__form input {
+  width: 100%;
+  padding: 2px 8px;
+  border: 0;
+  border-bottom: 2px solid #bc0023;
+  background-color: transparent;
+}
+
+.nav__search__form.nav__search_active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .nav__donate {
@@ -734,7 +759,7 @@ button {
   line-height: 16px;
 }
 
-.nav__btn:hover {
+.nav__btn:hover, .nav__btn.is_active {
   background-color: #bc0023;
 }
 
@@ -812,6 +837,10 @@ button {
   }
   .nav__search {
     margin-right: 0;
+  }
+  .nav__search__form {
+    width: 400px;
+    padding: 20px 10px;
   }
   .nav__donate {
     display: -webkit-box;
