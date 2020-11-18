@@ -345,16 +345,16 @@ button {
   background-color: transparent;
 }
 
+.menu__link,
+.nav__btn {
+  -webkit-transition: padding 0.5s ease-in-out;
+  -o-transition: padding 0.5s ease-in-out;
+  transition: padding 0.5s ease-in-out;
+}
+
 /* Mobile Nav */
 .nav__brand {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  display: block;
   margin-right: 1rem;
 }
 
@@ -378,15 +378,16 @@ button {
 
 .brand__title {
   display: none;
+  line-height: 1.2;
 }
 
 .brand__title h1 {
   font-family: "Arizonia", cursive;
   font-size: 20px;
-  line-height: 18px;
 }
 
 .brand__subtitle {
+  display: block;
   font-size: 12px;
 }
 
@@ -402,28 +403,81 @@ button {
           order: 4;
   width: 100%;
   height: 100vh;
+  position: relative;
 }
 
 .nav__menu.is__active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: fixed;
+  top: 53px;
+  left: 0;
+  right: 0;
+  background-color: var(--nav-color);
 }
 
-.nav__link {
-  min-width: 68px;
-  padding: 0.5rem 1rem;
+.menu__item {
+  position: relative;
+}
+
+.menu__item:nth-child(1n + 2) {
+  padding: 4px 10px;
+}
+
+.menu__item_donate {
+  background-color: #bc0023;
+  margin-bottom: 40px;
+}
+
+.menu__link {
+  min-width: 110px;
+  padding: 0.25rem 0.5rem;
+  position: relative;
   text-transform: uppercase;
 }
 
-.nav__link:hover {
+.menu__link:hover {
   background-color: #bc0023;
+}
+
+.has__submenu .menu__link {
+  cursor: pointer;
+}
+
+.nav__submenu {
+  display: none;
+  min-width: 10rem;
+  padding: 0 20px;
+  position: relative;
+}
+
+.submenu__link {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  position: relative;
+}
+
+.submenu__link:hover::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #bc0023;
+}
+
+.has__submenu_active:hover .nav__submenu {
+  display: block;
 }
 
 .nav__date {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  text-align: center;
 }
 
 .nav__actions {
@@ -479,9 +533,6 @@ button {
   .brand__logo {
     margin-right: 6px;
   }
-  .brand__title {
-    display: block;
-  }
   .nav__menu {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -499,11 +550,36 @@ button {
     width: auto;
     height: auto;
   }
-  .nav__link {
+  .menu__item:nth-child(1n + 2) {
+    padding: 0;
+  }
+  .menu__item_donate {
+    display: none;
+  }
+  .menu__link {
+    min-width: 75px;
     padding: 1.5rem 0.5rem;
   }
   .nav__submenu {
     display: none;
+    position: absolute;
+    top: 99%;
+    left: 0;
+    padding: 10px;
+    text-align: left;
+    border-top: 2px solid #bc0023;
+    background-color: var(--nav-color);
+    -webkit-box-shadow: 0 6px 10px rgba(37, 50, 61, 0.15);
+            box-shadow: 0 6px 10px rgba(37, 50, 61, 0.15);
+  }
+  .submenu__link::after {
+    display: none;
+  }
+  .submenu__link:hover {
+    background-color: #bc0023;
+  }
+  .has__submenu:hover .nav__submenu {
+    display: block;
   }
   .nav__date {
     -webkit-box-ordinal-group: 3;
@@ -530,11 +606,22 @@ button {
   .burger {
     display: none;
   }
+  .nav_scroll .menu__link,
+  .nav_scroll .nav__btn {
+    padding-top: 1.3rem;
+    padding-bottom: 1.3rem;
+  }
 }
 
 @media (min-width: 1216px) {
   .container {
     max-width: 1152px;
+  }
+}
+
+@media (min-width: 768px) {
+  .brand__title {
+    display: block;
   }
 }
 
