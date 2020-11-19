@@ -447,9 +447,7 @@ button {
 }
 
 @media (min-width: 600px) and (max-width: 1024px) {
-  [data-tooltip]:not(.is-loading).nav__donate.has__tooltip-bottom::before,
-  [data-tooltip]:not(.is-disabled).nav__donate.has__tooltip-bottom::before,
-  [data-tooltip]:not([disabled]).nav__donate.has__tooltip-bottom::before {
+  [data-tooltip].tooltip__bottom::before {
     left: -50%;
   }
 }
