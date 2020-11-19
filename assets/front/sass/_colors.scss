@@ -1,14 +1,68 @@
+// Root colors
 :root {
-	--body-bg: #fcfcfc;
-	--body-color: #171919;
-	--nav-color: #25323d;
+  --body-bg: #fcfcfc;
+  --body-color: #171919;
+  --nav-color: #25323d;
 }
 
-$link: #bc0023;
+// Colors
+$bodyColor: var(--body-color);
+$nav: hsl(207, 24%, 19%);
 $white: #ffffff;
-$blue: #007fef;
-$cat: #f55;
+$link: hsl(349, 100%, 37%);
+$primary: hsl(171, 100%, 41%);
+$info: hsl(204, 86%, 53%);
+$danger: hsl(348, 100%, 61%);
+$warning: hsl(48, 100%, 67%);
+$amaranth: hsl(348, 78%, 53%);
 $shuttleGray: #516270;
 $silverSand: #c6cacd;
 
-$nav-rgba: rgba(39, 39, 39, 1);
+// Color classes
+.primary__txt {
+  color: $primary;
+}
+.info__txt {
+  color: $info;
+}
+.danger__txt {
+  color: $danger;
+}
+.warning__txt {
+  color: $warning;
+}
+.amaranth__txt {
+  color: $amaranth;
+}
+.shuttleGray__txt {
+  color: $shuttleGray;
+}
+.silverSand__txt {
+  color: $silverSand;
+}
+
+// Background classes
+.white__bg {
+  background-color: $white;
+}
+.primary__bg {
+  background-color: $primary;
+}
+.info__bg {
+  background-color: $info;
+}
+.danger__bg {
+  background-color: $danger;
+}
+.warning__bg {
+  background-color: $warning;
+}
+.amaranth__bg {
+  background-color: $amaranth;
+}
+.shuttleGray__bg {
+  background-color: $shuttleGray;
+}
+.silverSand__bg {
+  background-color: $silverSand;
+}

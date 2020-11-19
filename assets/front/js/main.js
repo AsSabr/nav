@@ -59,7 +59,9 @@
     submenu.classList.remove('has__submenu_active');
   });
 
-  // Search Modal
+  /**
+   * Search Modal
+   */
   for (const el of openEls) {
     el.addEventListener('click', function () {
       const modalId = this.dataset.open;

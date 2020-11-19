@@ -35,11 +35,11 @@
             <li class="menu__item menu__item_donate">
               <a href="" class="menu__link">
                 <i class="bx bx-ruble"></i>
-                Помочь проекту
+                хотите помочь проекту?
               </a>
             </li>
             <li class="menu__item">
-              <a href="" class="menu__link">Главная</a>
+              <a href="index.html" class="menu__link is__active">Главная</a>
             </li>
             <li class="menu__item has__submenu">
               <a tabindex="0" class="menu__link">
@@ -59,23 +59,27 @@
               </ul>
             </li>
             <li class="menu__item">
-              <a href="" class="menu__link">Контакты</a>
+              <a href="test.html" class="menu__link">Контакты</a>
             </li>
           </ul>
 
           <div class="nav__date">29 Зуль Хидджа</div>
           <div class="nav__actions">
-            <div class="nav__donate">
-              <a href="" class="nav__btn">
+            <div
+              class="nav__donate tooltip__bottom"
+              data-tooltip="Хотите помочь проекту?"
+            >
+              <a href="" class="menu__link menu__link_action menu__link_donate">
                 <i class="bx bx-ruble"></i>
               </a>
             </div>
 
             <div class="nav__search">
               <button
-                class="nav__btn nav__btn_search"
+                class="menu__link menu__link_action menu__link_search"
                 type="button"
                 data-open="search-modal"
+                title="Поиск"
               >
                 <i class="bx bx-search-alt"></i>
               </button>
@@ -101,7 +105,13 @@
                       method="GET"
                       class="modal__form animate__animated animate__fadeIn"
                     >
-                      <input type="text" name="s" placeholder="Найти" />
+                      <input
+                        type="text"
+                        name="s"
+                        placeholder="Введите слово или словосочетание"
+                        role="search"
+                        contenteditable
+                      />
                     </form>
                   </div>
                 </div>
@@ -128,33 +138,36 @@
             </form>
           </div>
         </div> -->
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
-        perspiciatis hic ullam obcaecati quidem porro consectetur vero fugit
-        mollitia vitae, nobis fuga quam quos harum libero illum explicabo
-        suscipit repellat et nesciunt ab amet neque! Ipsam fuga sed ex quos
-        provident pariatur perspiciatis, cum fugiat ducimus labore voluptatibus
-        veniam iste sunt, earum natus. Dolorum, quidem expedita inventore,
-        ullam, reprehenderit ducimus nihil placeat nemo ut ratione qui
-        distinctio eos fuga rem harum voluptatibus dolorem deleniti tempora
-        voluptatum iure. Inventore praesentium sapiente, quisquam vitae,
-        voluptas, tempora architecto dignissimos harum veniam autem vel quas
-        quae! Dolores dignissimos provident modi consequuntur reiciendis sint
-        laudantium et hic esse quam totam ratione excepturi inventore laboriosam
-        maiores dicta quia harum unde atque, est molestias enim! Facilis
-        aspernatur alias neque ut perferendis itaque, quod eos. Illo impedit
-        facere, mollitia architecto cum asperiores, assumenda quidem repellat
-        quibusdam porro minima exercitationem. Accusamus suscipit laboriosam
-        dolorem quae nulla maiores. Cupiditate aspernatur itaque eaque ipsa.
-        Ipsa, consectetur adipisci atque molestias non iure enim eos, explicabo
-        facilis, consequatur blanditiis nisi obcaecati libero perferendis ullam
-        dolore velit animi corrupti quas ab id perspiciatis! Quis a voluptatibus
-        amet illo quas ducimus maiores tempora! Quasi cupiditate consequatur
-        iure nemo repellat totam vitae enim quod id, reiciendis consequuntur
-        fuga illo ullam, voluptas voluptatem delectus corrupti, quis nihil
-        magnam doloremque in facilis qui. Vitae saepe quos adipisci ut neque, ad
-        quidem quia, expedita quo sed, sequi illo pariatur. Maxime nostrum esse
-        modi deleniti ea! Doloribus, quibusdam dicta! Deleniti perferendis ipsum
-        sit quia fuga? Facere doloremque in voluptatibus provident dignissimos
+        <span class="tooltip__warning tooltip__bottom" data-tooltip="Main"
+          >Lorem</span
+        >
+        ipsum dolor sit amet consectetur adipisicing elit. Enim perspiciatis hic
+        ullam obcaecati quidem porro consectetur vero fugit mollitia vitae,
+        nobis fuga quam quos harum libero illum explicabo suscipit repellat et
+        nesciunt ab amet neque! Ipsam fuga sed ex quos provident pariatur
+        perspiciatis, cum fugiat ducimus labore voluptatibus veniam iste sunt,
+        earum natus. Dolorum, quidem expedita inventore, ullam, reprehenderit
+        ducimus nihil placeat nemo ut ratione qui distinctio eos fuga rem harum
+        voluptatibus dolorem deleniti tempora voluptatum iure. Inventore
+        praesentium sapiente, quisquam vitae, voluptas, tempora architecto
+        dignissimos harum veniam autem vel quas quae! Dolores dignissimos
+        provident modi consequuntur reiciendis sint laudantium et hic esse quam
+        totam ratione excepturi inventore laboriosam maiores dicta quia harum
+        unde atque, est molestias enim! Facilis aspernatur alias neque ut
+        perferendis itaque, quod eos. Illo impedit facere, mollitia architecto
+        cum asperiores, assumenda quidem repellat quibusdam porro minima
+        exercitationem. Accusamus suscipit laboriosam dolorem quae nulla
+        maiores. Cupiditate aspernatur itaque eaque ipsa. Ipsa, consectetur
+        adipisci atque molestias non iure enim eos, explicabo facilis,
+        consequatur blanditiis nisi obcaecati libero perferendis ullam dolore
+        velit animi corrupti quas ab id perspiciatis! Quis a voluptatibus amet
+        illo quas ducimus maiores tempora! Quasi cupiditate consequatur iure
+        nemo repellat totam vitae enim quod id, reiciendis consequuntur fuga
+        illo ullam, voluptas voluptatem delectus corrupti, quis nihil magnam
+        doloremque in facilis qui. Vitae saepe quos adipisci ut neque, ad quidem
+        quia, expedita quo sed, sequi illo pariatur. Maxime nostrum esse modi
+        deleniti ea! Doloribus, quibusdam dicta! Deleniti perferendis ipsum sit
+        quia fuga? Facere doloremque in voluptatibus provident dignissimos
         ratione, nemo nulla? Sequi, reprehenderit! Deserunt repellendus a at
         natus eum sed voluptas corrupti soluta debitis, eaque numquam facere
         animi dolor adipisci reprehenderit? In dicta perferendis earum quisquam
