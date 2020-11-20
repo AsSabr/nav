@@ -67,6 +67,7 @@ button {
   top: 0;
   left: 0;
   right: 0;
+  z-index: 100;
   background-color: var(--nav-color);
   box-shadow: 0 6px 10px rgba($color: $nav, $alpha: 0.15);
 }
@@ -150,6 +151,7 @@ button {
     top: 52px;
     left: 0;
     right: 0;
+    z-index: 100;
     background-color: var(--nav-color);
     animation: fadeInRight 0.7s;
   }
@@ -361,6 +363,7 @@ button {
     position: absolute;
     top: 99%;
     left: 0;
+    z-index: 100;
     padding: 10px;
     text-align: left;
     border-top: 2px solid $link;
@@ -453,13 +456,83 @@ button {
 }
 
 /*= Main =*/
+/* Mobile */
 .main {
-  padding-top: 4.25rem;
+  margin-top: 4.25rem;
+  background-color: #fcfcfc;
+}
+
+.main__entry {
+  display: grid;
+}
+
+.post__block {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  align-items: start;
+  line-height: 1;
+}
+
+.post__date {
+  font-size: 13px;
+}
+
+.post__title {
+  position: relative;
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 10px;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    background-color: $shuttleGray;
+  }
+
+  &::before {
+    left: -80px;
+    top: 7px;
+    width: 10px;
+    height: 10px;
+  }
+
+  &::after {
+    left: -75px;
+    top: 12px;
+    height: 1px;
+    width: 65px;
+  }
 }
 
 @media (min-width: 600px) {
   .main {
-    padding-top: 5rem;
-    color: $amaranth;
+    margin-top: 7rem;
+  }
+
+  .post__block {
+    column-gap: 80px;
+  }
+
+  .post__date {
+  }
+
+  .post__title {
+    font-size: 24px;
+    margin-bottom: 24px;
+
+    &::before {
+      left: -80px;
+      top: 7px;
+      width: 10px;
+      height: 10px;
+    }
+
+    &::after {
+      left: -75px;
+      top: 12px;
+      height: 1px;
+      width: 65px;
+    }
   }
 }

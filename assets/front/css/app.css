@@ -104,7 +104,7 @@ button::-moz-focus-inner,
 }
 
 :root {
-  --body-bg: #fcfcfc;
+  --body-bg: hsl(0, 0%, 97%);
   --body-color: #171919;
   --nav-color: #25323d;
 }
@@ -1140,6 +1140,7 @@ button {
   top: 0;
   left: 0;
   right: 0;
+  z-index: 100;
   background-color: var(--nav-color);
   -webkit-box-shadow: 0 6px 10px rgba(37, 50, 60, 0.15);
           box-shadow: 0 6px 10px rgba(37, 50, 60, 0.15);
@@ -1245,6 +1246,7 @@ button {
   top: 52px;
   left: 0;
   right: 0;
+  z-index: 100;
   background-color: var(--nav-color);
   -webkit-animation: fadeInRight 0.7s;
           animation: fadeInRight 0.7s;
@@ -1473,6 +1475,7 @@ button {
     position: absolute;
     top: 99%;
     left: 0;
+    z-index: 100;
     padding: 10px;
     text-align: left;
     border-top: 2px solid #bd0023;
@@ -1553,13 +1556,81 @@ button {
 }
 
 /*= Main =*/
+/* Mobile */
 .main {
-  padding-top: 4.25rem;
+  margin-top: 4.25rem;
+  background-color: #fcfcfc;
+}
+
+.main__entry {
+  display: -ms-grid;
+  display: grid;
+}
+
+.post__block {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100px 1fr;
+      grid-template-columns: 100px 1fr;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  line-height: 1;
+}
+
+.post__date {
+  font-size: 13px;
+}
+
+.post__title {
+  position: relative;
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.post__title::before, .post__title::after {
+  content: '';
+  position: absolute;
+  background-color: #516270;
+}
+
+.post__title::before {
+  left: -80px;
+  top: 7px;
+  width: 10px;
+  height: 10px;
+}
+
+.post__title::after {
+  left: -75px;
+  top: 12px;
+  height: 1px;
+  width: 65px;
 }
 
 @media (min-width: 600px) {
   .main {
-    padding-top: 5rem;
-    color: #e52a4f;
+    margin-top: 7rem;
+  }
+  .post__block {
+    -webkit-column-gap: 80px;
+            column-gap: 80px;
+  }
+  .post__title {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+  .post__title::before {
+    left: -80px;
+    top: 7px;
+    width: 10px;
+    height: 10px;
+  }
+  .post__title::after {
+    left: -75px;
+    top: 12px;
+    height: 1px;
+    width: 65px;
   }
 }
