@@ -1,123 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="assets/front/fonts/boxicons-2.0.7/css/boxicons.min.css"
-    />
-    <link rel="stylesheet" href="assets/front/css/app.css" />
-  </head>
-  <body>
-    <header class="header">
-      <div class="container">
-        <nav class="nav">
-          <div class="nav__brand">
-            <a href="" class="brand">
-              <img
-                class="brand__logo"
-                src="http://via.placeholder.com/200x200"
-                alt="Al-Yaqeen"
-              />
-              <div class="brand__title">
-                <h1>Al-Yaqeen</h1>
-                <span class="brand__subtitle">достоверное знание</span>
-              </div>
-            </a>
-          </div>
-          <ul class="nav__menu">
-            <li class="menu__item menu__item_donate">
-              <a href="" class="menu__link">
-                <i class="bx bx-ruble"></i>
-                Помочь проекту
-              </a>
-            </li>
-            <li class="menu__item">
-              <a href="index.html" class="menu__link">Главная</a>
-            </li>
-            <li class="menu__item has__submenu">
-              <a tabindex="0" class="menu__link">
-                Блог
-                <i class="bx bxs-chevron-down"></i>
-              </a>
-              <ul class="nav__submenu">
-                <li class="submenu__item">
-                  <a href="" class="submenu__link">Link</a>
-                </li>
-                <li class="submenu__item">
-                  <a href="" class="submenu__link">Link</a>
-                </li>
-                <li class="submenu__item">
-                  <a href="" class="submenu__link">Link</a>
-                </li>
-              </ul>
-            </li>
-            <li class="menu__item">
-              <a href="test.html" class="menu__link">Контакты</a>
-            </li>
-          </ul>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="assets/front/fonts/boxicons-2.0.7/css/boxicons.min.css"
+		/>
+		<link rel="stylesheet" href="assets/front/css/app.css" />
+	</head>
+	<body>
+		<header class="header">
+			<div class="container">
+				<nav class="nav">
+					<div class="nav__brand">
+						<a href="" class="brand">
+							<img
+								class="brand__logo"
+								src="http://via.placeholder.com/200x200"
+								alt="Al-Yaqeen"
+							/>
+							<div class="brand__title">
+								<h1>Al-Yaqeen</h1>
+								<span class="brand__subtitle">достоверное знание</span>
+							</div>
+						</a>
+					</div>
+					<ul class="nav__menu">
+						<li class="menu__item menu__item_donate">
+							<a href="" class="menu__link">
+								<i class="bx bx-ruble"></i>
+								Помочь проекту
+							</a>
+						</li>
+						<li class="menu__item">
+							<a href="index.html" class="menu__link">Главная</a>
+						</li>
+						<li class="menu__item has__submenu">
+							<a tabindex="0" class="menu__link">
+								Блог
+								<i class="bx bxs-chevron-down"></i>
+							</a>
+							<ul class="nav__submenu">
+								<li class="submenu__item">
+									<a href="" class="submenu__link">Link</a>
+								</li>
+								<li class="submenu__item">
+									<a href="" class="submenu__link">Link</a>
+								</li>
+								<li class="submenu__item">
+									<a href="" class="submenu__link">Link</a>
+								</li>
+							</ul>
+						</li>
+						<li class="menu__item">
+							<a href="test.html" class="menu__link">Контакты</a>
+						</li>
+					</ul>
 
-          <div class="nav__date">29 Зуль Хидджа</div>
-          <div class="nav__actions">
-            <div class="nav__donate">
-              <a href="" class="menu__link menu__link_action menu__link_donate">
-                <i class="bx bx-ruble"></i>
-              </a>
-            </div>
+					<div class="nav__date">29 Зуль Хидджа</div>
+					<div class="nav__actions">
+						<div class="nav__donate">
+							<a href="" class="menu__link menu__link_action menu__link_donate">
+								<i class="bx bx-ruble"></i>
+							</a>
+						</div>
 
-            <div class="nav__search">
-              <button
-                class="menu__link menu__link_action menu__link_search"
-                type="button"
-                data-open="search-modal"
-              >
-                <i class="bx bx-search-alt"></i>
-              </button>
-              <div
-                id="search-modal"
-                class="nav__search__modal modal"
-                data-animation="fadeInRight"
-              >
-                <div class="modal__content">
-                  <div class="modal__header">
-                    <h4>Что вы ищите?</h4>
-                    <button
-                      class="modal__btn__close"
-                      aria-label="close modal"
-                      data-close
-                    >
-                      <i class="bx bxs-x-square"></i>
-                    </button>
-                  </div>
-                  <div class="modal__body">
-                    <form
-                      action=""
-                      method="GET"
-                      class="modal__form animate__animated animate__fadeIn"
-                    >
-                      <input type="text" name="s" placeholder="Найти" />
-                    </form>
-                  </div>
-                </div>
-              </div>
-            </div>
+						<div class="nav__search">
+							<button
+								class="menu__link menu__link_action menu__link_search"
+								type="button"
+								data-open="search-modal"
+							>
+								<i class="bx bx-search-alt"></i>
+							</button>
+							<div
+								id="search-modal"
+								class="nav__search__modal modal"
+								data-animation="fadeInRight"
+							>
+								<div class="modal__content">
+									<div class="modal__header">
+										<h4>Что вы ищите?</h4>
+										<button
+											class="modal__btn__close"
+											aria-label="close modal"
+											data-close
+										>
+											<i class="bx bxs-x-square"></i>
+										</button>
+									</div>
+									<div class="modal__body">
+										<form
+											action=""
+											method="GET"
+											class="modal__form animate__animated animate__fadeIn"
+										>
+											<input type="text" name="s" placeholder="Найти" />
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
 
-            <div class="burger burger_collapse">
-              <div class="burger__box">
-                <div class="burger__inner"></div>
-              </div>
-            </div>
-          </div>
-        </nav>
-      </div>
-    </header>
+						<div class="burger burger_collapse">
+							<div class="burger__box">
+								<div class="burger__inner"></div>
+							</div>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</header>
 
-    <script src="assets/front/js/main.js"></script>
-  </body>
+		<main class="main">
+			<div class="container">
+				<div class="flexes">
+					<div class="flexbox">123</div>
+					<div class="flexbox two">123</div>
+				</div>
+			</div>
+		</main>
+
+		<script src="assets/front/js/main.js"></script>
+	</body>
 </html>
