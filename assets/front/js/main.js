@@ -2,8 +2,8 @@
   /**
    * Query elements
    */
-  const navbar = document.querySelector('.nav'),
-    sticky = navbar.offsetTop,
+  const header = document.querySelector('.header'),
+    sticky = header.offsetTop,
     width = 600,
     burger = document.querySelector('.burger'),
     menu = document.querySelector('.nav__menu'),
@@ -18,9 +18,9 @@
    */
   const navbarScroll = () => {
     if (window.pageYOffset > sticky && window.innerWidth >= width) {
-      navbar.classList.add('nav_scroll');
+      header.classList.add('header_scroll');
     } else {
-      navbar.classList.remove('nav_scroll');
+      header.classList.remove('header_scroll');
     }
   };
 

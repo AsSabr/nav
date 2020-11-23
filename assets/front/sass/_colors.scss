@@ -1,8 +1,8 @@
 // Root colors
 :root {
-	--body-bg: #fcfcfc;
-	--body-color: #171919;
-	--nav-color: #25323d;
+  --body-bg: #fcfcfc;
+  --body-color: #171919;
+  --nav-color: #25323d;
 }
 
 // Colors
@@ -17,52 +17,55 @@ $warning: hsl(48, 100%, 67%);
 $amaranth: hsl(348, 78%, 53%);
 $shuttleGray: #516270;
 $silverSand: #c6cacd;
+$timeline: #d0d6e2;
+$timeline2: #929fba;
+$timeline-point: #7283a7;
 
 // Color classes
 .primary__txt {
-	color: $primary;
+  color: $primary;
 }
 .info__txt {
-	color: $info;
+  color: $info;
 }
 .danger__txt {
-	color: $danger;
+  color: $danger;
 }
 .warning__txt {
-	color: $warning;
+  color: $warning;
 }
 .amaranth__txt {
-	color: $amaranth;
+  color: $amaranth;
 }
 .shuttleGray__txt {
-	color: $shuttleGray;
+  color: $shuttleGray;
 }
 .silverSand__txt {
-	color: $silverSand;
+  color: $silverSand;
 }
 
 // Background classes
 .white__bg {
-	background-color: $white;
+  background-color: $white;
 }
 .primary__bg {
-	background-color: $primary;
+  background-color: $primary;
 }
 .info__bg {
-	background-color: $info;
+  background-color: $info;
 }
 .danger__bg {
-	background-color: $danger;
+  background-color: $danger;
 }
 .warning__bg {
-	background-color: $warning;
+  background-color: $warning;
 }
 .amaranth__bg {
-	background-color: $amaranth;
+  background-color: $amaranth;
 }
 .shuttleGray__bg {
-	background-color: $shuttleGray;
+  background-color: $shuttleGray;
 }
 .silverSand__bg {
-	background-color: $silverSand;
+  background-color: $silverSand;
 }
